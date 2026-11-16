@@ -1,54 +1,43 @@
-# 📱 Desenvolvimento Mobile
+Aplicativo Mobile IrrigaTech 🌱
+O IrrigaTech é um aplicativo mobile desenvolvido com React Native, TypeScript e Expo, integrado ao Supabase para monitoramento inteligente de plantas.
 
-## 📝 Descrição do Projeto/Atividade
-[Descreva brevemente o projeto prático que você escolheu colocar aqui. Ex: "Desenvolvimento de um aplicativo de previsão do tempo em React Native e TypeScript, integrado com a API OpenWeatherMap."]
+Funcionalidades desenvolvidas
+Monitoramento de três sensores de umidade do solo.
 
----
+Monitoramento da luminosidade do ambiente.
 
-## 🧠 Reflexão de Aprendizado
+Integração com Supabase para consulta das leituras.
 
-### 1. O que aprendi?
-[Substitua este texto por sua resposta. Explique em suas palavras os conceitos teóricos e práticos de desenvolvimento mobile que você aprendeu com esta atividade, tais como: componentes, Hooks do React (useState, useEffect), tratamento de estados assíncronos, consumo de APIs, estilização, etc.]
+Atualização automática dos dados utilizando Supabase Realtime.
 
-### 2. Para que serve (Por que aprendi)?
-[Substitua este texto por sua resposta. Explique qual a relevância de aprender a desenvolver aplicativos móveis nativos/híbridos com React Native para o mercado de trabalho atual. Qual problema real esta competência resolve no dia a dia corporativo?]
+Indicador de conexão Online/Offline.
 
----
+Identificação de necessidade de irrigação quando a umidade é igual ou inferior a 25%.
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
-*   React Native / Expo
-*   TypeScript
-*   [Outra biblioteca, ex: Axios, React Navigation, React Native Vector Icons]
+Opção de irrigação automática.
 
----
+Botão para acionamento manual da irrigação.
 
-## 💻 Demonstração e Como Rodar
+Interface visual com tema verde escuro.
 
-### Código Relevante Comentado
-[Insira aqui um trecho de código TypeScript/React Native que foi crucial para o projeto, comentando as linhas mais importantes para demonstrar seu entendimento. Exemplo:]
-```tsx
-// Exemplo de código (substitua pelo seu):
-const fetchWeatherData = async (city: string) => {
-  try {
-    setLoading(true);
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=SUA_API_KEY`);
-    const data = await response.json();
-    setWeather(data);
-  } catch (err) {
-    setError('Não foi possível carregar os dados de clima.');
-  } finally {
-    setLoading(false);
-  }
-};
-```
+Telas de login, cadastro, perfil e gerenciamento de plantas.
 
-### Instruções para Executar
-1. Instale as dependências na pasta do projeto:
-   ```bash
-   npm install
-   ```
-2. Inicialize o servidor de desenvolvimento do Expo:
-   ```bash
-   npx expo start
-   ```
-3. Use o aplicativo Expo Go em seu dispositivo móvel ou um emulador Android/iOS para visualizar.
+Tecnologias utilizadas
+React Native
+
+TypeScript
+
+Expo
+
+Expo Router
+
+Supabase
+
+PostgreSQL
+
+AsyncStorage
+
+Desenvolvimento
+O aplicativo foi desenvolvido para facilitar o acompanhamento das condições de cultivo, apresentando as informações coletadas pelos sensores em uma interface intuitiva. A integração com o Supabase permite consultar os registros armazenados e atualizar os dados exibidos conforme novas leituras são recebidas.
+
+O projeto busca contribuir para um monitoramento mais eficiente das plantas, auxiliando o usuário na identificação das necessidades de umidade e luminosidade.
