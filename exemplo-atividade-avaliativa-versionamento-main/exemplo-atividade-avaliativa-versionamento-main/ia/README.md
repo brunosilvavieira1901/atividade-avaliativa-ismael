@@ -1,56 +1,88 @@
-# 🤖 Inteligência Artificial (IA)
+# 🤖 Inteligência Artificial — IrrigaTech 🌱
 
-## 📝 Descrição do Projeto/Atividade
-[Descreva brevemente o projeto prático que você escolheu colocar aqui. Ex: "Desenvolvimento de um classificador automático de sentimentos em avaliações de clientes utilizando a API do Google Gemini em Python."]
-
----
-
-## 🧠 Reflexão de Aprendizado
-
-### 1. O que aprendi?
-[Substitua este texto por sua resposta. Explique em suas palavras os conceitos de IA que você aprendeu com esta atividade, tais como: modelos de linguagem (LLMs), Engenharia de Prompts (Prompt Engineering), consumo de SDKs/APIs de IA, estruturação de dados de resposta (JSON Schema), ou conceitos de Machine Learning.]
-
-### 2. Para que serve (Por que aprendi)?
-[Substitua este texto por sua resposta. Explique como a integração de IA pode agregar valor a sistemas de software tradicionais. Quais são os casos de uso práticos no mercado onde a inteligência artificial ajuda a automatizar tarefas complexas?]
+> Documentação do módulo de Inteligência Artificial do IrrigaTech, com foco na análise de informações e no apoio ao monitoramento inteligente das plantas.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
-*   Python / Node.js
-*   SDK do Google GenAI (Gemini API) ou OpenAI API
-*   [Outra biblioteca ou ferramenta, ex: python-dotenv, LangChain]
+## 🌿 1. Sobre a Inteligência Artificial
+
+A Inteligência Artificial (IA) faz parte da proposta de evolução tecnológica do IrrigaTech, buscando tornar o monitoramento das plantas mais inteligente e eficiente.
+
+O objetivo desse módulo é utilizar os dados coletados pelos sensores para auxiliar na interpretação das condições do ambiente, identificar possíveis necessidades das plantas e contribuir para a tomada de decisões relacionadas à irrigação.
+
+A IA complementa o sistema, trabalhando em conjunto com o aplicativo mobile, o site, o firmware e o banco de dados.
 
 ---
 
-## 💻 Demonstração e Como Rodar
+## ⚙️ 2. Tecnologias utilizadas
 
-### Código Relevante Comentado
-[Insira aqui o trecho do código que faz a requisição para o modelo de IA e configura o prompt, comentando as partes fundamentais. Exemplo:]
-```python
-# Exemplo de código em Python usando a API do Gemini (substitua pelo seu):
-import google.generativeai as genai
-import os
+| Tecnologia | Função |
+|---|---|
+| Python | Processamento e análise de informações |
+| Inteligência Artificial | Apoio à interpretação dos dados |
+| PostgreSQL | Armazenamento das informações dos sensores |
+| Supabase | Integração e acesso aos dados |
+| JSON | Organização e troca de informações |
 
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash')
+---
 
-def analisar_sentimento(texto_cliente):
-    prompt = f"Analise o sentimento do seguinte texto. Responda apenas com: POSITIVO, NEGATIVO ou NEUTRO. Texto: {texto_cliente}"
-    response = model.generate_content(prompt)
-    return response.text.strip()
-```
+## 📊 3. Dados utilizados pela IA
 
-### Instruções para Executar
-1. Certifique-se de ter o Python (ou Node.js) instalado em sua máquina.
-2. Instale as dependências necessárias:
-   ```bash
-   pip install google-generativeai python-dotenv
-   ```
-3. Crie um arquivo `.env` na raiz da pasta e adicione sua chave de API:
-   ```env
-   GEMINI_API_KEY=sua_chave_aqui
-   ```
-4. Execute o script principal:
-   ```bash
-   python app.py
-   ```
+O módulo pode utilizar as informações coletadas pelo sistema para analisar as condições das plantas.
+
+| Informação | Utilização |
+|---|---|
+| Umidade do solo | Identificar condições de solo seco ou úmido |
+| Média dos sensores | Analisar a condição geral do solo |
+| Luminosidade | Acompanhar a iluminação do ambiente |
+| Temperatura | Considerar as condições de temperatura |
+| Estado da bomba | Consultar o funcionamento da irrigação |
+
+---
+
+## 🧠 4. Possibilidades de aplicação da IA
+
+A Inteligência Artificial pode contribuir para diferentes funcionalidades dentro do IrrigaTech:
+
+- 🌱 Análise das condições de cultivo.
+- 💧 Identificação de situações que podem exigir irrigação.
+- 🌡️ Interpretação dos dados de temperatura.
+- ☀️ Análise das condições de luminosidade.
+- 📈 Identificação de padrões nas leituras dos sensores.
+- 💡 Geração de sugestões para melhorar o cuidado com as plantas.
+
+---
+
+## 🔄 5. Integração com o sistema
+
+A proposta de integração da IA utiliza os dados armazenados pelo sistema IrrigaTech.
+
+O funcionamento pode ser organizado nas seguintes etapas:
+
+1. **Coleta:** os sensores realizam as leituras do ambiente.
+2. **Armazenamento:** os dados são registrados no Supabase.
+3. **Consulta:** as informações são disponibilizadas para análise.
+4. **Processamento:** o módulo de IA interpreta os dados recebidos.
+5. **Resultado:** as análises podem ser utilizadas para apresentar informações e sugestões ao usuário.
+
+---
+
+## 🎯 6. Objetivo do módulo
+
+O objetivo da Inteligência Artificial no IrrigaTech é ampliar as possibilidades do sistema, utilizando tecnologia para auxiliar no acompanhamento das plantas e na identificação de suas necessidades.
+
+Com a análise dos dados, o projeto busca evoluir de um sistema de monitoramento para uma solução cada vez mais inteligente, contribuindo para a economia de água e a sustentabilidade.
+
+---
+
+## 🌎 7. Inteligência Artificial e sustentabilidade
+
+A utilização da Inteligência Artificial pode ajudar a melhorar o aproveitamento dos recursos naturais, permitindo decisões mais conscientes sobre a irrigação.
+
+O IrrigaTech busca unir inovação, programação e sustentabilidade para desenvolver soluções tecnológicas que contribuam para o cuidado com as plantas e o meio ambiente.
+
+---
+
+**🌱 IrrigaTech — Tecnologia e sustentabilidade trabalhando juntas.**
+
+*Módulo de Inteligência Artificial integrado ao projeto IrrigaTech.*
