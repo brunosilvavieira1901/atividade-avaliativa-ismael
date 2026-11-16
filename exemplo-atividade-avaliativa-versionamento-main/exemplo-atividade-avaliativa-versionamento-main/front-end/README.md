@@ -1,50 +1,107 @@
-# 💻 Desenvolvimento Front-end
+# 🌐 Front-End — IrrigaTech 🌱
 
-## 📝 Descrição do Projeto/Atividade
-[Descreva brevemente o projeto prático que você escolheu colocar aqui. Ex: "Criação de um painel/dashboard web responsivo para gerenciamento de finanças pessoais, com gráficos interativos e controle de saldo."]
-
----
-
-## 🧠 Reflexão de Aprendizado
-
-### 1. O que aprendi?
-[Substitua este texto por sua resposta. Explique em suas palavras os conceitos de front-end que você aprendeu com esta atividade, tais como: semântica HTML, estilização com CSS moderno (Grid/Flexbox), componentização, interatividade em JavaScript, manipulação do DOM ou o uso de bibliotecas/frameworks.]
-
-### 2. Para que serve (Por que aprendi)?
-[Substitua este texto por sua resposta. Explique por que é importante criar interfaces web bonitas, amigáveis, acessíveis e responsivas. Qual o impacto de um bom desenvolvimento front-end no produto final e na experiência do usuário?]
+> Interface web desenvolvida para apresentar o projeto IrrigaTech, permitindo visualizar informações sobre o sistema de irrigação inteligente e suas tecnologias.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
-*   HTML5 / CSS3 (Vanilla)
-*   JavaScript (ES6+)
-*   [Outra biblioteca ou ferramenta, ex: React, TailwindCSS, Chart.js]
+## 🌿 1. Sobre o site
+
+O **IrrigaTech** possui um site desenvolvido para apresentar o funcionamento do sistema de irrigação inteligente, destacando a união entre tecnologia, agricultura e sustentabilidade.
+
+A interface foi planejada para oferecer uma experiência visual moderna e intuitiva, apresentando informações sobre o projeto, seus componentes, tecnologias utilizadas e benefícios para o meio ambiente.
+
+O site também busca demonstrar como a tecnologia pode contribuir para o monitoramento das plantas e para o uso consciente da água.
 
 ---
 
-## 💻 Demonstração e Como Rodar
+## ⚙️ 2. Tecnologias utilizadas
 
-### Código Relevante Comentado
-[Insira aqui um trecho de código CSS, JS ou HTML que foi crucial para a estrutura ou lógica do projeto, comentando as linhas mais importantes. Exemplo:]
-```javascript
-// Exemplo de código (substitua pelo seu):
-const updateUI = (transactions) => {
-  const listElement = document.getElementById('transaction-list');
-  listElement.innerHTML = ''; // Limpa a lista anterior
-  
-  transactions.forEach(transaction => {
-    const item = document.createElement('li');
-    item.classList.add(transaction.type === 'income' ? 'income-item' : 'expense-item');
-    item.innerHTML = `${transaction.name} <span>R$ ${transaction.amount.toFixed(2)}</span>`;
-    listElement.appendChild(item);
-  });
-};
-```
+| Tecnologia | Função |
+|---|---|
+| React | Desenvolvimento dos componentes e da interface |
+| Vite | Ambiente de desenvolvimento e execução |
+| HTML5 | Estrutura das páginas |
+| CSS3 | Estilização e identidade visual |
+| JavaScript | Funcionalidades e interatividade |
 
-### Instruções para Executar
-1. Se for um projeto estático em HTML/CSS/JS:
-   - Abra o arquivo `index.html` diretamente em seu navegador web, ou utilize a extensão **Live Server** no VS Code para rodar localmente.
-2. Se for um projeto utilizando Node.js/Vite/React:
-   - Instale as dependências: `npm install`
-   - Execute o servidor local: `npm run dev`
-   - Acesse o link fornecido no console (ex: `http://localhost:5173`).
+---
+
+## 🎨 3. Identidade visual
+
+O site foi desenvolvido com uma proposta visual moderna e tecnológica, utilizando elementos que representam a natureza e a inovação.
+
+Características da interface:
+
+- 🌱 Identidade visual inspirada na natureza.
+- 🌑 Tema visual moderno com tons escuros e verdes.
+- 💻 Organização das informações em seções e cards.
+- 🖼️ Imagens que representam áreas verdes e áreas desmatadas.
+- ✨ Elementos visuais para destacar as funcionalidades do projeto.
+- 📱 Organização da interface pensando na experiência do usuário.
+
+---
+
+## 🚀 4. Funcionalidades do site
+
+O front-end foi desenvolvido para apresentar as principais informações do projeto IrrigaTech.
+
+Entre os recursos da interface estão:
+
+- Apresentação do projeto e de seus objetivos.
+- Seções explicativas sobre o sistema de irrigação.
+- Apresentação dos componentes utilizados no projeto.
+- Cards com informações sobre Arduino, sensores e programação.
+- Conteúdos relacionados à agricultura e sustentabilidade.
+- Informações sobre economia e uso consciente da água.
+- Botões interativos para navegação entre as seções.
+
+---
+
+## 🧩 5. Organização do projeto
+
+O front-end utiliza componentes e arquivos responsáveis pela estrutura, aparência e funcionamento da interface.
+
+| Tecnologia / Arquivo | Responsabilidade |
+|---|---|
+| React | Organização dos componentes |
+| App.jsx | Estrutura principal da aplicação |
+| main.jsx | Inicialização da aplicação |
+| style.css | Estilização dos elementos |
+| HTML | Estrutura do conteúdo |
+| JavaScript | Interatividade e comportamentos |
+
+---
+
+## 🔄 6. Integração com o IrrigaTech
+
+O front-end faz parte de um projeto maior, que reúne diferentes tecnologias para desenvolver um sistema inteligente de irrigação.
+
+Sua função é apresentar o projeto e facilitar o acesso às informações sobre seu funcionamento.
+
+O sistema completo envolve:
+
+- **Front-end:** interface visual do projeto.
+- **Back-end:** processamento e comunicação das informações.
+- **Banco de dados:** armazenamento das leituras dos sensores.
+- **Firmware:** comunicação com os sensores e controle da bomba.
+- **Aplicativo Mobile:** acompanhamento das informações pelo celular.
+
+---
+
+## 🎯 7. Objetivo do desenvolvimento
+
+O desenvolvimento do site tem como objetivo apresentar o IrrigaTech de maneira organizada, moderna e acessível.
+
+Por meio de uma interface intuitiva, o usuário consegue conhecer a proposta do projeto, entender como funciona o sistema de irrigação e visualizar as tecnologias utilizadas em seu desenvolvimento.
+
+---
+
+## 🌎 8. Tecnologia e sustentabilidade
+
+O IrrigaTech busca unir desenvolvimento de software e sustentabilidade, demonstrando como soluções tecnológicas podem ajudar no monitoramento de plantas e no uso mais consciente dos recursos naturais.
+
+---
+
+**🌱 IrrigaTech — Tecnologia e sustentabilidade trabalhando juntas.**
+
+*Front-end desenvolvido com React, Vite, HTML, CSS e JavaScript.*
